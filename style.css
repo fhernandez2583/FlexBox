@@ -37,11 +37,16 @@ h2 {
 /* To Do Section */
 .week {
   display: inline-flex;
+  flex-grow: 3;
+  flex-direction: column;
 }
 
 .row {
   min-height: 200px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .square {
@@ -49,18 +54,18 @@ h2 {
   height: 125px;
   padding: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .day.square {
   background-color: steelblue;
   border: 1px solid white;
-
 }
 
 .task.square {
   background-color: khaki;
   border: 1px solid white;
-
 }
 
 .task p {
@@ -73,6 +78,7 @@ h2 {
 .reminders {
   background-color: khaki;
   display: inline-flex;
+  flex-grow: 2;
 }
 
 .reminders h3 {
